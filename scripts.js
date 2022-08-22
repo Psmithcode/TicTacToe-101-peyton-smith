@@ -20,8 +20,8 @@ const handleClick = (element) => {
 
 const addMarker = (id) => {
   
-  const row = parseInt(element.id.charAt(0))
-  const column = parseInt(element.id.charAt(2))
+  const row = parseInt(id.charAt(0))
+  const column = parseInt(id.charAt(2))
   
   console.log(`*** The current marker is:  ${currentMarker}. ***`)
   console.log(`Therefore, a  "${currentMarker}"  should be placed in the square with the id:  ${id}`)
@@ -44,10 +44,10 @@ const changeMarker = () => {
 }
 
 // maybe remove the button
-const resetBoard = (button) => {
+const resetBoard = () => {
   
   
-    const squares = document.getElementsByTagName('TD') 
+  const squares = document.getElementsByTagName("TD") 
   
   for (i=0; i < squares.length; i++) {
 
